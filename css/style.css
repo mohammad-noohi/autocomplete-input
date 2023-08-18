@@ -1,0 +1,123 @@
+/* CSS Reset */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+ul,
+ol,
+dl {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+body {
+  font-size: 1.6rem;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(233, 233, 233);
+}
+
+.container {
+  max-width: 120rem;
+  /* border-left: 1px solid red;
+  border-right: 1px solid red; */
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+header,
+footer {
+  height: 10rem;
+  background-color: #635af7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 2rem;
+}
+
+footer {
+  margin-top: auto;
+}
+
+/* SEARCH SECTION */
+
+.main {
+  padding: 4rem 0;
+}
+
+.search-wrapper {
+  max-width: 50rem;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.search-field {
+  display: flex;
+  background-color: #fff;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+.search-input {
+  font-size: 2rem;
+  padding: 1.4rem;
+  flex-grow: 1;
+  outline: none;
+  border: none;
+  border-radius: 1rem;
+  width: 100%;
+}
+
+.search-icon {
+  padding: 1.2rem;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 1rem;
+}
+
+.search-icon i {
+  display: block;
+  font-size: 2rem;
+  color: #635af7;
+  font-weight: 900;
+  transform: scale(1.5);
+}
+
+.auotcomplete-list {
+  background-color: rgb(255, 255, 255);
+  border-radius: 1rem;
+  overflow: hidden;
+  display: none;
+}
+
+/* show autoComplete box */
+.auotcomplete-list.active {
+  display: block;
+}
+
+.autocomplete-item {
+  padding: 1rem 2rem;
+  cursor: pointer;
+  transition: background-color 100ms linear;
+}
+
+.autocomplete-item:hover {
+  background-color: #eee;
+}
